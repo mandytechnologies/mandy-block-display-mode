@@ -22,8 +22,8 @@ class MandyBlockDisplayMode {
 
 		$updater = new \Skeletor\Plugin_Updater(
 			plugin_basename(__FILE__),
-			MANDY_TABBED_CONTENT_VERSION,
-			'https://github.com/mandytechnologies/mandy-tabbed-content/blob/main/package.json'
+			MANDY_BLOCK_DISPLAY_MODE_VERSION,
+			'https://github.com/mandytechnologies/mandy-block-display-mode/blob/main/package.json'
 		);
 	}
 
