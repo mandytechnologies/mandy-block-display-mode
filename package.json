@@ -1,7 +1,7 @@
 {
-  "name": "mandy-block-display-mode",
-  "version": "1.0.0",
-  "description": "A plugin to add display-mode functionality to Wordpress blocks",
+  "name": "qb-block-settings-display-mode",
+  "version": "1.0.1",
+  "description": "Adds controls for display mode (light, dark, et al)",
   "main": "index.js",
   "scripts": {
     "build": "wp-scripts build",
@@ -15,9 +15,9 @@
     "classnames": "^2.3.2"
   },
   "plugin_data": {
-		"author": "Mandy",
-		"author_profile": "https://mandydesign.com",
-		"title": "Mandy Block Display Mode",
+		"author": "Quick Build",
+		"author_profile": "https://www.quickbuildwebsite.com/",
+		"title": "QB Block Display Mode",
 		"download_url": "https://github.com/mandytechnologies/mandy-block-display-mode/archive/refs/heads/main.zip"
 	}
 }

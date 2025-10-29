@@ -2,13 +2,19 @@
 namespace Mandy;
 
 /*
-Plugin Name: Quick Build Block Settings — Display Mode
-Plugin URI:  https://quickbuildwebsite.com
-Description: Adds controls for display mode (light, dark, et al)
-Version:     0.1
-Author:      Quick Build
-Author URI:  https://quickbuildwebsite.com
-Text Domain: quick-build-block
+ * Plugin Name:           QB - Block Settings — Display Mode
+ * Plugin URI:            https://github.com/mandytechnologies/mandy-block-display-mode
+ * Description:           Adds controls for display mode (light, dark, et al)
+ * Version:               1.0.1
+ * Requires PHP:          7.0
+ * Requires at least:     6.1.0
+ * Tested up to:          6.8.2
+ * Author:                Quick Build
+ * Author URI:            https://www.quickbuildwebsite.com/
+ * License:               GPLv2 or later
+ * License URI:           https://www.gnu.org/licenses/
+ * Text Domain:           qb-block-settings-display-mode
+ * 
 */
 
 class MandyBlockDisplayMode {
@@ -63,3 +69,15 @@ class MandyBlockDisplayMode {
 }
 
 add_action('after_setup_theme', ['\Mandy\MandyBlockDisplayMode', 'setup']);
+
+define('MANDY_BLOCK_DISPLAY_MODE', '`1.0.1');
+
+require 'plugin-update-checker/plugin-update-checker.php';
+
+$update_checker = \Puc_v4_Factory::buildUpdateChecker(
+	'https://github.com/mandytechnologies/mandy-block-display-mode',
+	__FILE__,
+	'mandy-block-display-mode'
+);
+
+require_once( 'includes/class-plugin.php' );
