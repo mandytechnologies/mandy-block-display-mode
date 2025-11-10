@@ -21,16 +21,6 @@ class MandyBlockDisplayMode {
 	public static function setup() {
 		add_action('enqueue_block_editor_assets', [__CLASS__, 'enqueue_block_editor_assets']);
 		add_filter('skeletor_block_data', [__CLASS__, 'update_block_class'], 9, 2);
-
-		if (!class_exists('\Skeletor\Plugin_Updater')) {
-			require_once(__DIR__ . '/class--plugin-updater.php');
-		}
-
-		$updater = new \Skeletor\Plugin_Updater(
-			plugin_basename(__FILE__),
-			MANDY_BLOCK_DISPLAY_MODE_VERSION,
-			'https://github.com/mandytechnologies/mandy-block-display-mode/blob/main/package.json'
-		);
 	}
 
 	/**
